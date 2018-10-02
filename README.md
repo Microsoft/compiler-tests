@@ -14,10 +14,10 @@ Quick Start
 -----------
 There are two main sub directories in the compiler-tests directory.  The descriptions of what they contain are listed below.  Overtime we expect to open more tests in these directories as well as add new areas of testing.
 
-####EH  (C++EH)
+#### EH  (C++EH)
 Only one test is included here now, ihateeh.cxx.  This tests object destructor semantics on Windows.  Compile the file with usual flag combinations (MSVC) and compare with the output file ihateeh.out.correct.  
 
-####SEH
+#### SEH
 The main tests in this directory are sehframes.cpp which tests various funclet frames, and xcpt4u.c which is a large collection of SEH torture tests.  This last test is one of the main litmus tests used to verify that a compiler supports SEH suffiently to be used in the Windows kernel.  Remaining sehxxxx.c tests are particular break outs from xcpt4u.c for ease of debugging.
 
 - Run the runtest.cmd in the seh directory to build the tests with MSVC.
